@@ -37,7 +37,7 @@ groovySubprojects.each { projectPath ->
         apply plugin: 'groovy'
 
         dependencies {
-            compile 'org.codehaus.groovy:groovy:2.4.5'
+            compile 'org.codehaus.groovy:groovy:2.4.5:indy'
         }
 
     }
@@ -62,7 +62,10 @@ allprojects {
     }
 
     tasks.withType(GroovyCompile) { task ->
-        task.groovyOptions.configurationScript = file "$rootDir/config/groovy/compiler-config.groovy"
+        task.groovyOptions.with{
+            configurationScript = file "$rootDir/config/groovy/compiler-config.groovy"
+            optimizationOptions.indy = true
+        }
     }
 
 }
