@@ -61,6 +61,10 @@ allprojects {
         task.options.encoding = 'UTF-8'
     }
 
+    tasks.withType(GroovyCompile) { task ->
+        task.groovyOptions.configurationScript = file "$rootDir/config/groovy/compiler-config.groovy"
+    }
+
 }
 
 
