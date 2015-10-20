@@ -6,6 +6,6 @@ include 'api'
 include 'services:webservice'
 */
 
-//rootProject.name = 'trynetty'
+rootProject.name = 'trynetty'
 
 include 'domain'
