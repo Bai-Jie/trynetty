@@ -1,9 +1,8 @@
-def javaSubprojects = [
-]
+def javaSubprojects = []
 
-def groovySubprojects = [
-        ':domain'
-]
+def groovySubprojects = []
+groovySubprojects << ':domain'
+groovySubprojects << ':business'
 
 (javaSubprojects + groovySubprojects).each { projectPath ->
     project(projectPath) {
