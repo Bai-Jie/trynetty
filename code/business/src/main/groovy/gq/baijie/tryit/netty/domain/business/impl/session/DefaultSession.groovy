@@ -2,7 +2,7 @@ package gq.baijie.tryit.netty.domain.business.impl.session
 
 import gq.baijie.tryit.netty.domain.business.communicate.ChannelInterface
 import gq.baijie.tryit.netty.domain.business.session.Feature
-import gq.baijie.tryit.netty.domain.business.session.FeaturecProvider
+import gq.baijie.tryit.netty.domain.business.session.FeatureProvider
 import gq.baijie.tryit.netty.domain.business.session.Session
 import gq.baijie.tryit.netty.domain.model.communicate.Message
 
@@ -12,12 +12,12 @@ class DefaultSession implements Session {
 
     private ChannelInterface channelInterface
 
-    private FeaturecProvider featureProvider
+    private FeatureProvider featureProvider
 
     private final Map<Byte, Feature> liveFeatures = [:]
 
     @Nullable
-    private FeaturecProvider getFeaturecProvider() {
+    private FeatureProvider getFeatureProvider() {
         featureProvider
     }
 
@@ -30,7 +30,7 @@ class DefaultSession implements Session {
     private Feature getFeature(byte requestType) {
         Feature feature = liveFeatures[requestType]
         if (!feature) {
-            feature = getFeaturecProvider()?.newFeature(requestType)
+            feature = getFeatureProvider()?.newFeature(requestType)
             if (feature) {
                 feature.bindSession(this)
                 liveFeatures[requestType] = feature
@@ -45,7 +45,7 @@ class DefaultSession implements Session {
     }
 
     @Override
-    void setFeatureProvider(FeaturecProvider featureProvider) {
+    void setFeatureProvider(FeatureProvider featureProvider) {
         this.featureProvider = featureProvider
     }
 

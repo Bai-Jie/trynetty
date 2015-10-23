@@ -7,7 +7,7 @@ public interface Session {
 
     void bindChannelInterface(ChannelInterface channelInterface);
 
-    void setFeatureProvider(FeaturecProvider featureProvider);
+    void setFeatureProvider(FeatureProvider featureProvider);
 
     /**
      * user make a request via {@link ChannelInterface}

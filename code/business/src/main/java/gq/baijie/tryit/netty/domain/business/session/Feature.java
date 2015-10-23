@@ -8,4 +8,6 @@ public interface Feature {
 
     void request(Message message);
 
+    //TODO onDestory/end/exit
+
 }
