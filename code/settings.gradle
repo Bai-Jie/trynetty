@@ -9,3 +9,7 @@ include 'services:webservice'
 rootProject.name = 'trynetty'
 
 include 'domain'
+include 'business'
+include 'gateway'
+include 'gateway-netty'
+include 'server'

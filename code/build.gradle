@@ -2,7 +2,11 @@ def javaSubprojects = [
 ]
 
 def groovySubprojects = [
-        ':domain'
+        ':domain',
+        ':business',
+        ':gateway',
+        ':gateway-netty',
+        ':server'
 ]
 
 (javaSubprojects + groovySubprojects).each { projectPath ->
