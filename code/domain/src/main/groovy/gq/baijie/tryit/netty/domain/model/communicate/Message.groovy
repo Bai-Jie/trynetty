@@ -1,4 +1,4 @@
-package gq.baijie.tryit.netty.domain.model.network
+package gq.baijie.tryit.netty.domain.model.communicate
 
 import groovy.transform.Immutable
 import okio.ByteString
