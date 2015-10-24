@@ -27,6 +27,8 @@ public class MessageHandler extends ChannelHandlerAdapter implements ChannelInte
     session.request((Message) msg);
   }
 
+  //TODO close session
+
   @Override
   public void bindSession(Session session) {
     this.session = session;
@@ -35,7 +37,7 @@ public class MessageHandler extends ChannelHandlerAdapter implements ChannelInte
   @Override
   public void write(Message message) {
     if (channelHandlerContext != null) {
-      channelHandlerContext.write(message);
+      channelHandlerContext.writeAndFlush(message);
     } else {
       throw new IllegalStateException(
           "shouldn't write before handlerAdded or after handlerRemoved");
