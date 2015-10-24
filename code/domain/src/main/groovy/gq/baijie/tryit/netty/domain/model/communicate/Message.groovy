@@ -11,8 +11,8 @@ class Message {
     public static final int LENGTH_FIELD_LENGTH = 2;
     public static final int TYPE_FIELD_LENGTH = 1;
     static {
-        assert Byte.BYTES == TYPE_FIELD_LENGTH
-        assert Short.BYTES == LENGTH_FIELD_LENGTH
+        assert Byte.SIZE == TYPE_FIELD_LENGTH * 8
+        assert Short.SIZE == LENGTH_FIELD_LENGTH * 8
     }
 
     byte type
