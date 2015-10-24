@@ -5,10 +5,11 @@ import gq.baijie.tryit.netty.business.impl.session.DefaultSession;
 
 public class Sessions {
 
-  private static final FeatureProvider defaultFeatureProvider = new DefaultDynamicFeatureProvider();
+  private static final DefaultDynamicFeatureProvider DEFAULT_FEATURE_PROVIDER =
+      new DefaultDynamicFeatureProvider();
 
-  public static FeatureProvider getDefaultFeatureProvider() {
-    return defaultFeatureProvider;
+  public static DefaultDynamicFeatureProvider getDefaultFeatureProvider() {
+    return DEFAULT_FEATURE_PROVIDER;
   }
 
   public static Session newSession() {
