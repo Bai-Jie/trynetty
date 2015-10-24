@@ -1,7 +1,7 @@
 package gq.baijie.tryit.netty.feature.echo;
 
-import gq.baijie.tryit.netty.domain.business.session.Feature;
-import gq.baijie.tryit.netty.domain.business.session.Session;
+import gq.baijie.tryit.netty.business.session.Feature;
+import gq.baijie.tryit.netty.business.session.Session;
 import gq.baijie.tryit.netty.domain.model.communicate.Message;
 
 public class EchoFeature implements Feature {

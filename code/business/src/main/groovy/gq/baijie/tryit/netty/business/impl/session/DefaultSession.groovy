@@ -1,9 +1,9 @@
-package gq.baijie.tryit.netty.domain.business.impl.session
+package gq.baijie.tryit.netty.business.impl.session
 
-import gq.baijie.tryit.netty.domain.business.communicate.ChannelInterface
-import gq.baijie.tryit.netty.domain.business.session.Feature
-import gq.baijie.tryit.netty.domain.business.session.FeatureProvider
-import gq.baijie.tryit.netty.domain.business.session.Session
+import gq.baijie.tryit.netty.business.communicate.ChannelInterface
+import gq.baijie.tryit.netty.business.session.Feature
+import gq.baijie.tryit.netty.business.session.FeatureProvider
+import gq.baijie.tryit.netty.business.session.Session
 import gq.baijie.tryit.netty.domain.model.communicate.Message
 
 import javax.annotation.Nullable

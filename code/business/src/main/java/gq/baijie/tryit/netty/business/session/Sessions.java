@@ -1,7 +1,7 @@
-package gq.baijie.tryit.netty.domain.business.session;
+package gq.baijie.tryit.netty.business.session;
 
-import gq.baijie.tryit.netty.domain.business.impl.session.DefaultDynamicFeatureProvider;
-import gq.baijie.tryit.netty.domain.business.impl.session.DefaultSession;
+import gq.baijie.tryit.netty.business.impl.session.DefaultDynamicFeatureProvider;
+import gq.baijie.tryit.netty.business.impl.session.DefaultSession;
 
 public class Sessions {
 

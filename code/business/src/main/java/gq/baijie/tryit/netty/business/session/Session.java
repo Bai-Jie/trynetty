@@ -1,6 +1,6 @@
-package gq.baijie.tryit.netty.domain.business.session;
+package gq.baijie.tryit.netty.business.session;
 
-import gq.baijie.tryit.netty.domain.business.communicate.ChannelInterface;
+import gq.baijie.tryit.netty.business.communicate.ChannelInterface;
 import gq.baijie.tryit.netty.domain.model.communicate.Message;
 
 public interface Session {

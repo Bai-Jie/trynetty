@@ -1,7 +1,7 @@
-package gq.baijie.tryit.netty.domain.business.impl.session
+package gq.baijie.tryit.netty.business.impl.session
 
-import gq.baijie.tryit.netty.domain.business.session.DynamicFeatureProvider
-import gq.baijie.tryit.netty.domain.business.session.Feature
+import gq.baijie.tryit.netty.business.session.DynamicFeatureProvider
+import gq.baijie.tryit.netty.business.session.Feature
 
 class DefaultDynamicFeatureProvider implements DynamicFeatureProvider {
 
