@@ -1,4 +1,5 @@
 def javaSubprojects = []
+javaSubprojects << ':feature:echo'
 
 def groovySubprojects = []
 groovySubprojects << ':domain'
