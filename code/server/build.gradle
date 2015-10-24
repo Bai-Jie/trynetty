@@ -1,0 +1,9 @@
+apply plugin: 'application'
+
+mainClassName = "${group}.server.Main"
+
+dependencies {
+    compile project(':gateway:netty5')
+    compile project(':feature:echo')
+    compile 'io.netty:netty-transport:5.0.0.Alpha2'
+}

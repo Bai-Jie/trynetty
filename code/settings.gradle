@@ -11,5 +11,6 @@ include 'domain'
 include 'business'
 include 'gateway:gateway'
 include 'gateway:netty5'
+include 'server'
 
 include 'feature:echo'
