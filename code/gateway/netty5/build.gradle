@@ -1,0 +1,5 @@
+dependencies {
+    compile project(':gateway:gateway')
+    compile 'io.netty:netty-buffer:5.0.0.Alpha2'
+    compile 'io.netty:netty-codec:5.0.0.Alpha2'
+}

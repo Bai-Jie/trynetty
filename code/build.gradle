@@ -1,9 +1,11 @@
 def javaSubprojects = []
 javaSubprojects << ':feature:echo'
+javaSubprojects << ':gateway:gateway'
 
 def groovySubprojects = []
 groovySubprojects << ':domain'
 groovySubprojects << ':business'
+groovySubprojects << ':gateway:netty5'
 
 (javaSubprojects + groovySubprojects).each { projectPath ->
     project(projectPath) {

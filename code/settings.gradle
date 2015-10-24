@@ -9,4 +9,7 @@ rootProject.name = 'trynetty'
 
 include 'domain'
 include 'business'
+include 'gateway:gateway'
+include 'gateway:netty5'
+
 include 'feature:echo'
