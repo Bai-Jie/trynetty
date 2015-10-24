@@ -31,6 +31,10 @@ groovySubprojects << ':gateway:netty5'
             ruleSets = ["java-basic", "java-braces"/*, "java-junit"*/]
         }
 
+        findbugs {
+            excludeFilter = rootProject.file 'config/findbugs/excludeFilter.xml'
+        }
+
     }
 }
 
