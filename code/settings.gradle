@@ -12,5 +12,6 @@ include 'business'
 include 'gateway:gateway'
 include 'gateway:netty5'
 include 'server'
+include 'client'
 
 include 'feature:echo'

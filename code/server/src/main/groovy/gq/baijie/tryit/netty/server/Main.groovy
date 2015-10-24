@@ -28,15 +28,11 @@ class Main {
         } else {
             port = 8080;
         }
-        new Main(port).run();
+        new Main(port: port).run();
     }
 
     static void init() {
         Sessions.defaultFeatureProvider.registerFeature((byte)1, EchoFeature)
-    }
-
-    public Main(int port) {
-        this.port = port;
     }
 
     public void run() throws Exception {
