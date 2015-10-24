@@ -5,20 +5,22 @@ import gq.baijie.tryit.netty.domain.model.communicate.Message;
 
 public interface Session {
 
-    void bindChannelInterface(ChannelInterface channelInterface);
+  void bindChannelInterface(ChannelInterface channelInterface);
 
-    void setFeatureProvider(FeatureProvider featureProvider);
+  void setFeatureProvider(FeatureProvider featureProvider);
 
-    /**
-     * user make a request via {@link ChannelInterface}
-     * @param message request message
-     */
-    void request(Message message);
+  /**
+   * user make a request via {@link ChannelInterface}
+   *
+   * @param message request message
+   */
+  void request(Message message);
 
-    /**
-     * {@link Feature} responds to user
-     * @param message response message
-     */
-    void respond(Message message);
+  /**
+   * {@link Feature} responds to user
+   *
+   * @param message response message
+   */
+  void respond(Message message);
 
 }

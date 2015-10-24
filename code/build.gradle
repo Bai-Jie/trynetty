@@ -62,7 +62,7 @@ allprojects {
     }
 
     tasks.withType(GroovyCompile) { task ->
-        task.groovyOptions.with{
+        task.groovyOptions.with {
             configurationScript = file "$rootDir/config/groovy/compiler-config.groovy"
             optimizationOptions.indy = true
         }

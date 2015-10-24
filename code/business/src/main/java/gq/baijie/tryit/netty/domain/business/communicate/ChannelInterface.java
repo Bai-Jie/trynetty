@@ -5,8 +5,8 @@ import gq.baijie.tryit.netty.domain.model.communicate.Message;
 
 public interface ChannelInterface {
 
-    void bindSession(Session session);
+  void bindSession(Session session);
 
-    void write(Message message);
+  void write(Message message);
 
 }
