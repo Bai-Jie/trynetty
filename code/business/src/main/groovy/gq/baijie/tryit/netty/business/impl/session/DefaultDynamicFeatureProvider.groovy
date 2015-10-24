@@ -5,10 +5,10 @@ import gq.baijie.tryit.netty.business.session.Feature
 
 class DefaultDynamicFeatureProvider implements DynamicFeatureProvider {
 
-    private final Map<Byte, Class<Feature>> features = [:]
+    private final Map<Byte, Class<? extends Feature>> features = [:]
 
     @Override
-    void registerFeature(byte requestType, Class<Feature> featureClass) {
+    void registerFeature(byte requestType, Class<? extends Feature> featureClass) {
         features[requestType] = featureClass
     }
 

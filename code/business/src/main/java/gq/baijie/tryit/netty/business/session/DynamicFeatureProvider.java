@@ -12,7 +12,7 @@ public interface DynamicFeatureProvider extends FeatureProvider {
    * @see #unregisterFeature
    * @see Message
    */
-  void registerFeature(byte requestType, Class<Feature> featureClass);
+  void registerFeature(byte requestType, Class<? extends Feature> featureClass);
 
   /**
    * unregister a {@link Feature} class registered by {@link #registerFeature}
