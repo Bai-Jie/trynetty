@@ -26,4 +26,8 @@ class Message {
         data?.size() ?: 0
     }
 
+    int getUnsignedType() {//TODO return short or int?
+        return type & 0x00ff
+    }
+
 }
